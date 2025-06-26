@@ -1,6 +1,7 @@
 let valor1 = '';
 let operacao = '';
 let valor2 = '';
+let expressao = '';
 
 
 function mudarTexto() {
@@ -10,11 +11,25 @@ function mudarTexto() {
 }
 
 function loadNum(num) {
-  let num = num;
-  document.getElementById("display").value;  
+  expressao = expressao + num;
+  document.getElementById("display").value = expressao;
   
 }
 
-function loadOperation() {
+function loadOperation(op) {
+  if(op==='x') op = '*';
+  expressao = expressao + op
+  document.getElementById("display").value = expressao;
+}
 
+
+function loadResult(){
+  resultado = eval(expressao);
+  document.getElementById("display").value = resultado;
+
+}
+
+function loadClear(){
+  expressao = '';
+  document.getElementById("display").value = expressao;
 }
