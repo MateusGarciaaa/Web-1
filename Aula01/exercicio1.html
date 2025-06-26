@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS 1</title>
-</head>
-<body>
-    <p id = "message"> Texto Original</p>
-    <input type="text" id = "nome">
-    <button onclick="mudarTexto()"> Mudar texto</button>
-    <br>
-    <button onclick="mudarEstilo()"> Mudar Estilo</button>
 
-<script src="exercicio1.js"></script>
+
+<body>
+    <p> CALCULADORA </p>
+    <br>
+    <button onclick="loadNum('1')">1</button>
+    <button onclick="loadNum('2')">2</button>
+    <button onclick="loadNum('3')">3</button>
+    <button onclick="loadOperation()">+</button>
+    <br>
+    <button onclick="loadNum('4')">4</button>
+    <button onclick="loadNum('5')">5</button>
+    <button onclick="loadNum('6')">6</button>
+    <button onclick="loadOperation()">-</button>
+    <br>
+    <button onclick="loadNum('7')">7</button>
+    <button onclick="loadNum('8')">8</button>
+    <button onclick="loadNum('9')">9</button>
+    <button onclick="loadOperation()">X</button>
+    <br>
+    <button onclick="loadOperation()"></button>
+    <button onclick="loadNum('0')">0</button> 
+    <button onclick="loadOperation()"></button>
+    <button onclick="loadOperation()">/</button>
+    <br><br><br>
+    <input type="text" id = "display">    
+    <button onclick="loadResult()">=</button>
+
+
+
+
+    <script src="exercicio1.js"></script>
 </body>
+
 </html>
